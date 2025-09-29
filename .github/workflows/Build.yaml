@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore Bootcamp_API.sln
+      run: dotnet restore src/Bootcamp_API/Bootcamp_API.sln
     - name: Build
-      run: dotnet build Bootcamp_API.sln --no-restore
+      run: dotnet build src/Bootcamp_API/Bootcamp_API.sln --no-restore
     - name: Test
-      run: dotnet test Bootcamp_API.sln --no-build --verbosity normal
+      run: dotnet test src/Bootcamp_API/Bootcamp_API.sln --no-build --verbosity normal
